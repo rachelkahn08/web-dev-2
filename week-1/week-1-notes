@@ -1,0 +1,170 @@
+WEB DESIGN IS RESPONSIVE DESIGN
+	you'll have to design for 3 screens at least
+	will not be fixed and unresponsive--that's for dinosaurs
+	embrace the fluidity of the web
+BUY responsive web design by ethan marcotte 
+READ website "a list apart"
+THE WEB IS EVERYWHERE -- even your fridge
+MEAT STICKS 
+	fat fingers
+	consider clickable links. the area needs to be big enough for a fat finger
+	20px padding all the way around an anchor tag makes it clickable
+CONTEXT
+	used to be browsers were capable because they happened in a computer plugged into a wall
+	now pretty much everything is a screen and the web happens everywhere
+	think about how ellie tries to swipe on anything
+	mobile devices are everywhere
+we don't design web pages. we design SYSTEMS 
+	think of things in grids
+	think of things in percentages
+	columns always equal 100% 
+design from CONTENT-OUT not from canvas-in
+content strategy is a PROCESS
+	more time at beginning of the process
+	different skills and workflows may be required
+	browser & device testing gets tricky
+content strategy questions
+	how should this content flow? 
+		what's the order of importance
+		should "this" go above of below "that"?
+	when should this content collapse? 
+		how should it collapse?
+		accordion/drop-down/carousel/scroller?
+			accordion: click on an item which expands to reveal content
+			drop-down: like a hamburger menu
+			carousel: image slider that goes to the next image
+			scroller: we don't really use them anymore but they can go left to right
+	should this content be deleted? 
+the FOLD = anything below the bottom of the screen
+STEP 1: CONTENT CREATION
+	design at the element level
+		STYLE GUIDES (mailchimp has  great website to see an example)
+		refer to style guides or brand guidelines
+	design a flexible grid
+		percentage based, multi-column
+	sketch content & functionality (not layout)
+		focus on the user experience
+	develop responsive prototypes
+		draft language, data, and images first
+STEP 2: TEST THE CONTENT
+	toggle device toolbar in inspector 
+	test layouts early on REAL DEVICES
+		desktop browsers & emulators can be misleading
+	iterate through sketches and prototype revisions 
+STEP 3: REFINE AND EXECUTE
+	create detailed visuals based on prototypes
+	somting something templates 
+THE SINGLE MOST IMPORTANT THING IS TO REMEMBER THAT EVERYTHING IS MOBILE FIRST = CONTENT FIRST 
+	never ever ever ever code your desktop first
+	never do this
+	ever
+	don't do it
+	it will ruin your life because you have to redo the whole thing
+	never do it.
+	just don't.
+READ: Mobile First by Luke Wrobleweski
+START with a fluid mobile layout, then scale up to adapt to bigger screens
+navigation is one of the big things to change on responsive sites 
+	drop downs kind of suck and avoid them if you can
+DEFINE BASIC CSS BEFORE THE FIRST BREAKPOINT
+	typography
+	colors
+	backgrounds
+	margins
+	etc..........fd.fdjdfkjldsfl.dsfsd.gkj.ds
+WIDTHS FOR BREAKPOINTS:
+	mobile: 	0px--767px (0 isn't even necessary though because anything before your first breakpoint is assumed to be mobile)
+	tablet: 	768px--1023px
+	desktop:	1024px and up
+RESPONSIVE LAYOUT
+	adapt layout to viewport
+	make content easy to read with minimum scrolling
+CONTENT FIRST RESPONSIVE LAYOUT
+	small screen designs are default
+	media queries scale UP not DOWN 
+		IN CSS:
+			@media screen and (min-width:768px):
+				{STYLES};
+			NEVER USE A MAX-WIDTH
+PROGRESSIVE ENHANCEMENT
+	buzzword bleh
+	incrementally adapt the presentation and behavior of content to different screens
+	start small and scale up
+VIEWPORT 
+	defines the visible portion of the browser canvas 
+	controls size: using the viewport tag allows us to make our site render properly on a smaller screen
+	mobile: browsers tell websites to render at a different width from the actual device
+	controls scaling: 
+		mobile safari displays websites at a size of 980 px wide but the actual device width is 320 px in portrait orientation
+		allows for the scaling that takes place
+	HTML: 
+		<head>
+			<meta
+				name="viewport"
+				content="width=device-width"
+			>
+		</head>
+***think about accessibility needs***
+BEYOND THE VIEWPORT: think fluid--think proportions
+	for WIDTH: think in terms of percents
+		**margin/gutter are interchangeable words
+		for margins measure in px first and then divide to find percentages 
+	FLUID FORMULA: (target/context) = result
+		target: desired size
+		context: PARENT container size
+		result: size defined in CSS (% or em)
+	FLUID FONT-SIZE:
+		use ems
+		(24px /	16px) = 	1.5 em
+		target	context 	result
+	FLUID MARGIN: (25px/ 1260px) =1.984dsfds%
+	FLUID GRIDS: 
+		you're usually gonna have 100% width for mobile but sometimes maybe a 50/50
+		assume the mobile will be in portrait
+		generally assume vertical stacking for small screens
+YOU CAN GIVE DIVS ROLES 
+	eg <nav role="navigation"> ... </nav>
+	these are great for accessibility 
+	gonna use a lot of comments to indicate pixel size for parent container
+FURTHER INSPIRATION: http://mediaqueri.es 
+SUMMARY:
+	content is king
+	mobile first
+	design for SCREENS not devices
+	consider device orientation
+	be fluid, liquid, flexible
+	think in proportions, not pixels
+	progressive enhancement SCALES UP and not down
+(there are a h*ckload of resources at the end of the presentation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

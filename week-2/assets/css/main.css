@@ -1,0 +1,154 @@
+@font-face{
+  font-family:"lato-regular";
+  src:  url("../fonts/lato-regular/Lato-Reg-webfont.eot"),
+        url("../fonts/lato-regular/Lato-Reg-webfont.ttf"),
+        url("../fonts/lato-regular/Lato-Reg-webfont.woff");
+}
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  background-color:black;
+  width:100%;
+  height:100%;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+a:hover {
+  color:white;
+}
+
+.a {
+  background-color:red;
+}
+.b {
+  background-color:blue;
+}
+.c {
+  background-color:yellow;
+}
+.d {
+  background-color:green;
+}
+.e {
+  background-color:orange;
+}
+.f {
+  background-color:purple;
+}
+.g {
+  background-color:pink;
+}
+.h {
+  background-color:brown;
+}
+
+.one-column .a, .one-column .b {
+  height: 50%;
+  width: 100%;
+}
+
+.two-column .a, .two-column .b{
+  height: 100%;
+  width: 50%;
+  float:left;
+}
+
+
+.three-column .a, .three-column .b, .three-column .c {
+  height: 100%;
+  width: 33.333%;
+  float:left;
+}
+
+.four-column .a, .four-column .b, .four-column .c, .four-column .d {
+  height: 100%;
+  width: 25%;
+  float:left;
+}
+
+.one-on-two .a {
+  height:50%;
+  width:100%;
+}
+.one-on-two .b, .one-on-two .c {
+  height:50%;
+  width:50%;
+  float:left;
+}
+
+.two-on-two .a, .two-on-two .b, .two-on-two .c, .two-on-two .d {
+  height:50%;
+  width:50%;
+  float:left;
+}
+
+.one-on-three .a {
+  height:50%;
+  width:100%;
+}
+
+.one-on-three .b, .one-on-three .c, .one-on-three .d {
+  height:50%;
+  width:33.333%;
+  float:left;
+}
+
+.column-stacked-rows .a {
+  height:100%;
+  width:33.333%;
+  float:left;
+}
+
+.column-stacked-rows .b, .column-stacked-rows .c, .column-stacked-rows .d {
+  height:33.333%;
+  width:66.666%;
+  float:right;
+}
+
+.index {
+  text-align:center;
+}
+
+.index .a, .index .b {
+  height:25%;
+  width:50%;
+  float:left;
+}
+
+.index .c, .index .d-and-e, .index .f-g-h {
+  width:33.333%;
+  height:75%;
+  float:left;
+}
+
+.d-and-e > div {
+  height:50%
+}
+
+.f-g-h > div {
+  height:33.333%;
+}
+
+.index-text {
+  position:relative;
+  top:50%;
+  transform:translate(0%,-50%);
+}
+.index-link {
+  font-family:"lato-regular";
+  color:black;
+  font-size:2.5em;
+  vertical-align: center;
+}
+
+
+
+
+
+
