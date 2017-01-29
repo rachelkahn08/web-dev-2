@@ -1,0 +1,246 @@
+html, body {
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: auto;
+}
+
+.a {
+	background: red;
+}
+
+.b {
+	background: blue;
+}
+
+.c {
+	background: green;
+}
+
+.d {
+	background: orange;
+}
+
+.option-1, .option-2, .option-3, .option-4 {
+		margin: 2.5%;
+	}
+
+/* SMALL */
+@media screen and ( min-width: 0px ) {
+
+/*option 1*/
+	.option-1 .a {
+		height: 10%;
+		width: 95%;
+	}
+
+	.option-1 .a, .option-1 .b, .option-1 .c {
+		margin-top: 0.8em;
+	}
+
+	.option-1 .b, .option-1 .c {
+		height: 40.5%;
+		width: 95%;
+	}
+
+/*option 2*/
+	.option-2 .a {
+		height: 50%;
+		width: 95%;
+		margin-bottom: .75em;
+	}
+
+	.option-2 .b, .option-2 .c {
+		height: 46.25%;
+		width: 46.25%;
+		float: left;
+	}
+
+	.option-2 .b {
+		margin-right: 2.5%;
+	}
+
+/*option 3*/
+	.option-3 .a, .option-3 .b, .option-3 .c, .option-3 .d {
+		height: 46.25%;
+		width: 46.25%;
+		float: left;
+	}
+
+	.option-3 .a, .option-3 .b {
+		margin-bottom: 2.5%;
+	}
+
+	.option-3 .a, .option-3 .c {
+		margin-right: 2.5%;
+	}
+
+/*option 4*/
+	.option-4 .a { 
+		height: 95%;
+		width: 32.5%;
+		float: left;
+	}
+
+	.option-4 .b, .option-4 .c, .option-4 .d {
+		height: 30.25%;
+		width: 60%;
+		float: left;
+		margin-left: 2.5%;
+	}
+
+	.option-4 .c {
+		margin-top: .75em;
+		margin-bottom: .75em;
+	}
+
+}
+
+/*MEDIUM*/
+@media screen and ( min-width: 767px ) {
+
+/*option 1*/
+	.option-1 {
+		margin-top: 2em;
+	}
+
+	.option-1 .a {
+		height: 9.25%;
+		width: 95%;
+	}
+
+	.option-1 .b, .option-1 .c {
+		height: 83.25%;
+		width: 46.25%;
+		float: left;
+	}
+
+	.option-1 .b {
+		margin-right: 2.5%;
+	}
+
+/*option 2*/
+	.option-2 .a {
+		height: 95%;
+		width: 46.25%;
+		float: left;
+		margin-left: 2.5%;
+	}
+
+	.option-2 .b {
+		margin-bottom: 1em;
+	}
+
+	.option-2 .b, .option-2 .c {
+		height: 46.25%;
+		width: 46.25%;
+		margin-right: 2.5%;
+		float: right;
+	}
+
+/*option 3*/
+	.option-3 .a {
+		height: 46.25%;
+		width: 95%;
+	}
+
+	.option-3 .b {
+		margin-right: 2.5%;
+	}
+
+	.option-3 .b, .option-3 .c, .option-3 .d {
+		height: 46.25%;
+		width: 30%;
+	}
+
+/*option 4*/
+	.option-4 .a, .option-4 .b {
+		height: 46.25%;
+		float: left;
+	}
+	
+	.option-4 .a {
+		margin-left: 2.5%;
+		width: 23.125%;
+	}
+
+	.option-4 .b {
+		width: 69.375%;
+	}
+
+	.option-4 .c, .option-4 .d {
+		height: 46.25%;
+		width: 46.25%;
+		margin-top: 2.5%;
+	}
+
+}
+
+/*LARGE*/
+@media screen and ( min-width: 1024px) {
+
+/*option 1*/
+	.option-1 .b {
+		width: 30%;
+		margin-right: 1.5%;
+		} 
+
+	.option-1 .c {
+		width: 63.5%;
+	}
+
+/*option 2*/
+	.option-2 .a, .option-2 .b {
+		height: 45%;
+		float: left;
+		margin-right: 1.5%;
+	}
+
+	.option-2 .a {
+		width: 30.5%;
+		margin-left: 2.5%;
+	}
+
+	.option-2 .b {
+		width: 63%;
+	}
+
+	.option-2 .c {
+		height: 50%;
+		width: 95%;
+	}
+
+/*option 3*/
+	.option-3 .a, .option-3 .b, .option-3 .c, .option-3 .d {
+		height: 95%;
+		width: 21.875%;
+		margin-right: 2.5%;
+	}
+
+/*option 4*/
+	.option-4 .a, .option-4 .b, .option-4 .c, .option-4 .d {
+		height: 45.5%;
+		float: left;
+	}
+
+	.option-4 .a, .option-4 .d {
+		width: 31.5%;
+	}
+
+	.option-4 .b, .option-4 .c {
+		width: 63.5%;
+	}
+
+	.option-4 .a, .option-4 .c {
+		margin-right: -1%;
+		margin-left: -0.5%;
+	}
+	
+	.option-4 .a, .option-4 .b {
+		margin-bottom: -1%;
+		margin-top: -1%;
+	}
+}
